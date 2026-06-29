@@ -110,7 +110,7 @@ body { font-family: 'Karla', Arial, sans-serif; background: #E2E2E4; color: var(
 
 .stat-trio { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; margin-bottom: 24px; }
 .stat-quad { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-bottom: 24px; }
-.stat-bar { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); padding: 24px 22px; border-top: 4px solid var(--carotte); border-radius: 12px; }
+.stat-bar { background: var(--noir); border: 1px solid rgba(13,20,44,0.15); padding: 24px 22px; border-top: 4px solid var(--carotte); border-radius: 12px; }
 .stat-bar.purple { border-top-color: var(--indigo); background: rgba(123,89,245,0.15); border-color: rgba(123,89,245,0.25); }
 .stat-bar.violet { border-top-color: var(--violet); background: rgba(184,28,203,0.12); border-color: rgba(184,28,203,0.22); }
 .stat-bar.yellow { border-top-color: var(--jaune); background: rgba(255,206,83,0.1); border-color: rgba(255,206,83,0.2); }
@@ -121,7 +121,7 @@ body { font-family: 'Karla', Arial, sans-serif; background: #E2E2E4; color: var(
 .stat-label { font-size: 0.72em; color: rgba(255,255,255,0.65); margin-top: 8px; text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.4; }
 
 .funnel-wrap { display: flex; gap: 12px; align-items: stretch; margin-bottom: 24px; }
-.funnel-step { flex: 1; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.14); border-radius: 12px; padding: 22px 18px; text-align: center; position: relative; }
+.funnel-step { flex: 1; background: var(--noir); border: 1px solid rgba(13,20,44,0.15); border-radius: 12px; padding: 22px 18px; text-align: center; position: relative; }
 .funnel-step::after { content: '→'; position: absolute; right: -18px; top: 50%; transform: translateY(-50%); font-size: 1.4em; color: rgba(255,255,255,0.25); z-index: 2; }
 .funnel-step:last-child::after { display: none; }
 .funnel-num { font-size: 2.4em; font-weight: 900; color: var(--carotte); line-height: 1; margin-bottom: 6px; }
@@ -136,7 +136,7 @@ body { font-family: 'Karla', Arial, sans-serif; background: #E2E2E4; color: var(
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .three-col { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
 
-.card-dark { background: rgba(255,255,255,0.06); border-radius: 12px; padding: 24px 22px; border-top: 3px solid var(--carotte); }
+.card-dark { background: var(--noir); border-radius: 12px; padding: 24px 22px; border-top: 3px solid var(--carotte); }
 .card-dark.purple { border-top-color: var(--indigo); }
 .card-dark.violet { border-top-color: var(--violet); }
 .card-dark.yellow { border-top-color: var(--jaune); background: rgba(255,206,83,0.08); }
@@ -263,12 +263,12 @@ body { font-family: 'Karla', Arial, sans-serif; background: #E2E2E4; color: var(
 <!-- ════════════════════════════════
      SLIDE 3 — RÉSULTATS CHIFFRÉS
 ════════════════════════════════ -->
-<div class="Slide Slide-dark">
+<div class="Slide Slide-grey">
   <div class="Slide-header-bar"></div>
   <div class="Slide-inner">
     <div class="sec-badge yellow">Résultats campagne</div>
-    <div class="Slide-big-title white">DES CHIFFRES QUI <span style="color:var(--carotte);">PARLENT.</span></div>
-    <div class="Slide-subtitle white">8 mois de programme ambassadrice. Une traçabilité complète de chaque étape du tunnel de conversion.</div>
+    <div class="Slide-big-title">DES CHIFFRES QUI <span style="color:var(--carotte);">PARLENT.</span></div>
+    <div class="Slide-subtitle">8 mois de programme ambassadrice. Une traçabilité complète de chaque étape du tunnel de conversion.</div>
 
     <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px; margin-bottom:16px;">
       <div class="stat-bar" style="padding:20px 22px;">
@@ -285,7 +285,7 @@ body { font-family: 'Karla', Arial, sans-serif; background: #E2E2E4; color: var(
       </div>
     </div>
 
-    <div style="font-size:0.7em; font-weight:900; color:rgba(255,255,255,0.35); text-transform:uppercase; letter-spacing:0.15em; margin-bottom:10px;">Tunnel de conversion</div>
+    <div style="font-size:0.7em; font-weight:900; color:rgba(13,20,44,0.45); text-transform:uppercase; letter-spacing:0.15em; margin-bottom:10px;">Tunnel de conversion</div>
     <div class="funnel-wrap">
       <div class="funnel-step" style="border-top:3px solid var(--jaune);">
         <div class="funnel-num" style="color:var(--jaune);">3 372</div>
@@ -313,7 +313,7 @@ body { font-family: 'Karla', Arial, sans-serif; background: #E2E2E4; color: var(
       </div>
     </div>
   </div>
-  <div class="Slide-foot dark">
+  <div class="Slide-foot">
     <strong>SHOP MY INFLUENCE × NOVAKID</strong>
     <span>Business Case — Juin 2026</span>
   </div>
@@ -389,32 +389,32 @@ body { font-family: 'Karla', Arial, sans-serif; background: #E2E2E4; color: var(
 <!-- ════════════════════════════════
      SLIDE 5 — ANALYSE & ENSEIGNEMENTS
 ════════════════════════════════ -->
-<div class="Slide Slide-dark">
+<div class="Slide Slide-grey">
   <div class="Slide-header-bar"></div>
   <div class="Slide-inner">
     <div class="sec-badge">Analyse</div>
-    <div class="Slide-big-title white">CE QUE CES <span style="color:var(--carotte);">RÉSULTATS</span><br>NOUS ENSEIGNENT.</div>
-    <div class="Slide-subtitle white">Trois signaux forts qui valident le modèle SMI et ouvrent des perspectives concrètes pour la suite.</div>
+    <div class="Slide-big-title">CE QUE CES <span style="color:var(--carotte);">RÉSULTATS</span><br>NOUS ENSEIGNENT.</div>
+    <div class="Slide-subtitle">Trois signaux forts qui valident le modèle SMI et ouvrent des perspectives concrètes pour la suite.</div>
 
     <div class="three-col" style="margin-bottom:20px;">
-      <div style="background:rgba(255,113,49,0.12); border:1px solid rgba(255,113,49,0.25); border-radius:14px; padding:28px 24px;">
+      <div style="background:var(--noir); border:1px solid rgba(255,113,49,0.25); border-radius:14px; padding:28px 24px;">
         <div style="font-size:2.5em; font-weight:900; color:var(--carotte); line-height:1; margin-bottom:12px;">01</div>
         <div style="font-size:0.9em; font-weight:900; color:white; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px;">L'authenticité convertit</div>
         <div style="font-size:0.8em; color:rgba(255,255,255,0.7); line-height:1.6;">Un taux de conversion clic → sign-up de <strong style="color:var(--beige);">18,9%</strong> est remarquable sur ce secteur. La confiance de l'audience envers Lola se traduit directement en intentions d'achat qualifiées.</div>
       </div>
-      <div style="background:rgba(123,89,245,0.15); border:1px solid rgba(123,89,245,0.3); border-radius:14px; padding:28px 24px;">
+      <div style="background:var(--noir); border:1px solid rgba(123,89,245,0.3); border-radius:14px; padding:28px 24px;">
         <div style="font-size:2.5em; font-weight:900; color:var(--lila); line-height:1; margin-bottom:12px;">02</div>
         <div style="font-size:0.9em; font-weight:900; color:white; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px;">Le fil rouge crée de l'actif</div>
         <div style="font-size:0.8em; color:rgba(255,255,255,0.7); line-height:1.6;">379 essais validés > 340 essais démarrés : l'effet de <strong style="color:var(--lila);">conversion différée</strong> prouve que le programme ambassadeur installe la marque dans la durée — pas dans l'instantané.</div>
       </div>
-      <div style="background:rgba(255,206,83,0.1); border:1px solid rgba(255,206,83,0.25); border-radius:14px; padding:28px 24px;">
+      <div style="background:var(--noir); border:1px solid rgba(255,206,83,0.25); border-radius:14px; padding:28px 24px;">
         <div style="font-size:2.5em; font-weight:900; color:var(--jaune); line-height:1; margin-bottom:12px;">03</div>
         <div style="font-size:0.9em; font-weight:900; color:white; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px;">Le tracking révèle la valeur</div>
         <div style="font-size:0.8em; color:rgba(255,255,255,0.7); line-height:1.6;">Sans traçabilité multi-étapes, la valeur des 379 essais validés et des 30,75K€ d'EMV serait <strong style="color:var(--jaune);">invisible</strong>. C'est la technologie SMI qui rend la performance démontrable et défendable en interne.</div>
       </div>
     </div>
 
-    <div style="background:rgba(255,255,255,0.06); border-radius:14px; padding:24px 32px; display:flex; align-items:center; gap:36px;">
+    <div style="background:var(--noir); border-radius:14px; padding:24px 32px; display:flex; align-items:center; gap:36px;">
       <div style="flex-shrink:0; text-align:center;">
         <div style="font-size:3.8em; font-weight:900; color:var(--carotte); line-height:1;">11,2%</div>
         <div style="font-size:0.68em; color:rgba(255,255,255,0.5); text-transform:uppercase; letter-spacing:0.08em; margin-top:4px;">Taux clic → abonnement<br>(essais validés / clics)</div>
@@ -423,7 +423,7 @@ body { font-family: 'Karla', Arial, sans-serif; background: #E2E2E4; color: var(
       <div style="font-size:0.88em; color:rgba(255,255,255,0.75); line-height:1.7;">Sur 100 personnes qui cliquent sur le lien de Lola, <strong style="color:white;">11 valident un essai gratuit</strong>. Dans un secteur EdTech où le coût d'acquisition est élevé et les intentions d'achat longues, c'est une performance qui <strong style="color:var(--beige);">justifie pleinement le modèle hybride</strong> et l'investissement dans un programme ambassadeur plutôt qu'une campagne ponctuelle.</div>
     </div>
   </div>
-  <div class="Slide-foot dark">
+  <div class="Slide-foot">
     <strong>SHOP MY INFLUENCE × NOVAKID</strong>
     <span>Business Case — Juin 2026</span>
   </div>
@@ -432,12 +432,12 @@ body { font-family: 'Karla', Arial, sans-serif; background: #E2E2E4; color: var(
 <!-- ════════════════════════════════
      SLIDE 7 — POURQUOI SMI
 ════════════════════════════════ -->
-<div class="Slide Slide-dark">
+<div class="Slide Slide-grey">
   <div class="Slide-header-bar"></div>
   <div class="Slide-inner">
     <div class="sec-badge">Valeur SMI</div>
-    <div class="Slide-big-title white">CE QUI FAIT <span style="color:var(--carotte);">LA DIFFÉRENCE</span><br>AVEC SMI.</div>
-    <div class="Slide-subtitle white">Novakid n'a pas seulement gagné des essais — Novakid a gagné une méthode. Celle qui transforme l'influence en actif business durable.</div>
+    <div class="Slide-big-title">CE QUI FAIT <span style="color:var(--carotte);">LA DIFFÉRENCE</span><br>AVEC SMI.</div>
+    <div class="Slide-subtitle">Novakid n'a pas seulement gagné des essais — Novakid a gagné une méthode. Celle qui transforme l'influence en actif business durable.</div>
 
     <div class="two-col">
       <div style="display:flex; flex-direction:column; gap:14px;">
@@ -460,7 +460,7 @@ body { font-family: 'Karla', Arial, sans-serif; background: #E2E2E4; color: var(
       </div>
     </div>
   </div>
-  <div class="Slide-foot dark">
+  <div class="Slide-foot">
     <strong>SHOP MY INFLUENCE × NOVAKID</strong>
     <span>Business Case — Juin 2026</span>
   </div>
